@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RBUNNY</title>
+    <link rel="shortcut icon" href="./assets/asset 6.png" type="image/x-icon">
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap");
+
+      .londrina-solid-regular {
+        font-family: "Londrina Solid", sans-serif;
+        font-weight: 300;
+      }
+    </style>
+    <style>
+      .hero-section {
+        background: url("./assets/asset\ 3.png");
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        padding: 50px 0;
+      }
+      .hero-section img {
+        /* max-width: 100%; */
+        margin-top: 80px;
+        height: auto;
+      }
+      .animated-img {
+        animation: bounce 4s infinite;
+      }
+      @keyframes bounce {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-30px);
+        }
+        60% {
+          transform: translateY(-15px);
+        }
+      }
+      .about-section {
+        /* padding: 0 10px; */
+        margin-top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      style="border-bottom: 8px solid black; padding: 0"
+      class="navbar navbar-expand-lg navbar-light"
+    >
+      <a class="navbar-brand" href="/">
+        <img class="brand" src="./assets/asset 0.png" alt="" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-center"
+        id="navbarNav"
+      >
+        <ul class="navbar-nav">
+          <li style="" class="nav-item nav-li">
+            <a style="padding: 15px 50px" class="nav-link nav-a" href="#hero">
+              <img style="width: 40px" src="./assets/asset 0.png" alt="" />
+            </a>
+          </li>
+          <li id="ancor" class="nav-item nav-li">
+            <a
+              style="padding: 15px 50px; color: #ff8689"
+              class="nav-link nav-a"
+              href="#about"
+              >About</a
+            >
+          </li>
+          <li id="ancor" class="nav-item nav-li">
+            <a
+              style="padding: 15px 50px; color: #ff8689"
+              class="nav-link nav-a"
+            >
+              <center>
+                <div style="text-align: center">
+                  <div>
+                    <img
+                      id="play"
+                      onclick="toggleAudio()"
+                      src="https://res.cloudinary.com/dchan630/image/upload/v1481676817/play_ierlvl.png"
+                      class="img-fluid"
+                      alt="Responsive image"
+                    /><audio id="player" src="./assets/bunny.mp3"></audio>
+                    <img
+                      id="pause"
+                      onclick="toggleAudio()"
+                      src="https://res.cloudinary.com/dchan630/image/upload/v1481676820/pause_nqfaht.png"
+                      class="img-fluid"
+                      alt="Responsive image"
+                    />
+                  </div>
+                  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+                </div>
+              </center>
+            </a>
+          </li>
+          <li style="background: black" class="nav-item nav-li">
+            <a
+              id="hwt"
+              style="padding: 15px 50px; color: #8cdbad"
+              class="nav-link nav-a hwtb"
+              href="#howtobuy"
+              >how to buy</a
+            >
+          </li>
+          <li id="ancor" class="nav-item nav-li"></li>
+          <li id="ancor" class="nav-item nav-li">
+            <a
+              style="padding: 15px 50px; color: #88b4de"
+              class="nav-link nav-a"
+              href="#tokenomics"
+              >tokenmics</a
+            >
+          </li>
+
+          <li class="nav-item nav-li">
+            <a style="padding: 15px 50px" class="nav-link nav-a" href="ttlink">
+              <img style="width: 40px" src="./assets/asset 1.png" alt="" />
+            </a>
+          </li>
+          <li class="nav-item nav-li">
+            <a style="padding: 15px 50px" class="nav-link nav-a" href="tglink">
+              <img
+                style="width: 40px"
+                src="./assets/asset 2.png"
+                class="img-fluid rounded-top"
+                alt=""
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <img
+        style="width: 50%; max-width: 90%"
+        src="./assets/asset 4.png"
+        alt="Hero Image"
+      />
+      <br />
+      <img style="max-width: 90%" src="./assets/asset 5.png" alt="Hero Image" />
+      <br />
+      <img
+        style="margin-bottom: 50; width: 40%; max-width: 100%"
+        src="./assets/asset 6.png"
+        alt="Animated Image"
+        class="pulse-animation"
+      />
+      <img id="black-border" src="./assets/asset 7.png" alt="" />
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+      <section id="about" class="about-section my-container">
+        <div class="abt-div">
+          <div id="tex-div">
+            <div style="border: 16px solid #fe9100">
+              <div class="inner-div">
+                <h2 class="abt-heading">ABOUT!</h2>
+                <p style="font-size: 45px" class="londrina-solid-regular">
+                  Meet Rainbow Bunny, a token inspired by the famous Viet OG
+                  meme, Tho Bay Mau!
+                  <br />
+                  <br />
+                  Get ready ‘cause this cute mf got more
+                  <br />
+                  colors than a unicorn on a sugar rush and promises to make
+                  your wallet hop with joy.
+                  <br />
+                  <br />
+                  Join us now and ride the rainbow to financial absurdity!
+                  🌈🐇💸
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="abt-img">
+            <img
+              style="max-width: 100%"
+              src="./assets/asset 8.png"
+              alt="About Image"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </section>
+      <img class="second-black" src="./assets/asset 12.png" alt="" />
+    </section>
+
+    <!-- how to buy section -->
+
+    <section style="background: #000" id="howtobuy">
+      <center style="padding: 80px 0">
+        <img style="max-width: 90%" src="./assets/asset 10.png" alt="" />
+      </center>
+      <section style="background: #f9e489" class="one">
+        <div class="container buy-div">
+          <h1 class="buy-heading londrina-solid-regular">1</h1>
+          <p class="londrina-solid-regular buy-p">
+            Download a Solana wallet. We recommend Phantom or Solflare. These
+            can be downloaded from the appstore or as chrome extensions for
+            desktop users.
+          </p>
+        </div>
+      </section>
+
+      <section style="background: #d898cb" class="skewed-div">
+        <div class="container buy-div">
+          <h1 class="buy-heading londrina-solid-regular">2</h1>
+          <p class="londrina-solid-regular buy-p">
+            Purchase Solana through the Phantom wallet or alternatively send
+            Solana to your new wallet from an CEX (Binance, Coinbase, etc) to
+            your wallet.
+          </p>
+        </div>
+      </section>
+      <section style="background: #88daab" class="skewed-two">
+        <div class="container buy-div">
+          <h1 class="buy-heading londrina-solid-regular">3</h1>
+          <p class="londrina-solid-regular buy-p">
+            Get some $RBUNNY. Go to Raydium and paste the $RBUNNY contract
+            address. Select the amount to buy and swap. BOOM! You’re now an OG
+            Bunny!
+          </p>
+        </div>
+      </section>
+      <section style="background: #f7af89" class="skewed-third">
+        <div class="container buy-div">
+          <h1 class="buy-heading londrina-solid-regular">4</h1>
+          <p class="londrina-solid-regular buy-p">
+            Congrats! You’re holding a colorful $RBUNNY bag. To view your tokens
+            in your wallet, always remember to import $RBUNNY’s CA.
+          </p>
+        </div>
+      </section>
+    </section>
+    <div class="wavy-border"></div>
+
+    <!-- tokenomics section -->
+
+    <section id="tokenomics">
+      <center>
+        <div>
+          <img
+            class="horse-animation"
+            style="margin-top: 100px; width: 30%; max-width: 90%"
+            src="./assets/asset 13.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="pulse-animation"
+            style="margin-top: 50px; width: 40%; max-width: 100%"
+            src="./assets/asset 14.png"
+            alt=""
+          />
+        </div>
+      </center>
+    </section>
+
+    <section class="token-details">
+      <div>
+        <img class="token-back-img" src="./assets/asset 15.png" alt="" />
+        <img class="left-img animated-img" src="./assets/asset 16.png" alt="" />
+        <img
+          class="right-img animated-img"
+          src="./assets/asset 17.png"
+          alt=""
+        />
+        <div class="details">
+          <h1>TOTAL SUPPLY = 1 BILLION $RBUNNY</h1>
+          <h1>LP? BURNT!</h1>
+          <h1>BLOCKCHAIN = SOLANA</h1>
+          <h1>TAXES = ZERO. 0. NADA.</h1>
+        </div>
+        <img class="bottom-img" src="./assets/asset 18.png" alt="" />
+      </div>
+      <div class="footer"></div>
+    </section>
+
+    <section style="background: #19337e">
+      <center>
+        <h1 class="footer-h">CA : xxxxxxxxxxxxxxxxx</h1>
+      </center>
+    </section>
+
+    <script>
+      function toggleAudio() {
+        var audioElement = document.getElementById("player");
+        var soundOn = document.getElementById("play");
+        var soundOff = document.getElementById("pause");
+        if (audioElement.paused) {
+          audioElement.play();
+          $(soundOn).show();
+          $(soundOff).hide();
+        } else {
+          audioElement.pause();
+          $(soundOn).hide();
+          $(soundOff).show();
+        }
+      }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
