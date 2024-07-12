@@ -404,8 +404,8 @@
           class="flex_dis"
           style="display: flex; align-items: center; justify-content: center"
         >
-          <button id="yesButton">Yes</button>
-          <button id="noButton">No</button>
+          <button id="yesButton"                       onclick="toggleAudio()">Yes</button>
+          <button id="noButton"                       onclick="toggleAudio()">No</button>
         </div>
       </div>
     </div>
@@ -425,11 +425,11 @@
 
           if (yesButton) {
             modal.style.display = "none";
-            closingAudio.play();
+            // closingAudio.play();
           } else {
             if (noButton) {
               modal.style.display = "none";
-              closingAudio.play();
+              // closingAudio.play();
             }
           }
 
