@@ -230,18 +230,7 @@
   top: -10%;
   right: 28%;
 }
-.details {
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-  font-family: "Cradust";
-  text-align: center;
-  background: white;
-  padding: 50px 65px;
-  border: 4px solid black;
-  border-radius: 30px;
-  transform: translate(10%, -168%);
-}
+
 .details h1 {
   font-size: 30px;
   margin-bottom: 20px;
@@ -370,7 +359,18 @@
     color: white;
   }
 }
-
+.details {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: "Cradust";
+  text-align: center;
+  background: white;
+  padding: 50px 65px;
+  border: 4px solid black;
+  border-radius: 30px;
+  transform: translate(10%, -194%);
+}
 @media screen and (max-width: 768px) {
   .details {
     width: 100%;
