@@ -2,7 +2,10 @@
   font-family: "Cradust";
   src: url("./font/Cardust.otf");
 }
-
+html,
+body {
+  overflow-x: hidden;
+}
 .my-container {
   max-width: 1070px;
   width: 100%;
