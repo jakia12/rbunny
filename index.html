@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RBUNNY</title>
-    <link rel="shortcut icon" href="./assets/asset 6.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/asset 6.png" type="image/x-icon" />
     <link
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       rel="stylesheet"
@@ -54,6 +54,65 @@
         margin-top: 100px;
       }
     </style>
+    <style type="text/css">
+      .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 98%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 99999;
+        border-radius: 10px;
+      }
+
+      .mod_content {
+        background-color: #131740;
+        width: 400px;
+        margin: 100px auto;
+        padding: 40px;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      /* Hide the modal when not displayed */
+      .hidden {
+        display: none;
+      }
+
+      #yesButton {
+        padding: 8px 28px;
+        margin-right: 15px;
+        outline: none;
+        border: none;
+        background-color: #ff5cbb;
+        color: #fff;
+        border-radius: 30px;
+        cursor: pointer;
+      }
+      #noButton {
+        padding: 8px 28px;
+        outline: none;
+        border: none;
+        background-color: #ff5cbb;
+        color: #fff;
+        border-radius: 30px;
+        cursor: pointer;
+      }
+      .faq_inner .card-header h4 button::before {
+        display: none !important;
+      }
+
+      @media screen and (max-width: 768px) {
+        .mod_content {
+          width: 95%;
+        }
+        .mob_space {
+          margin-top: 50px;
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- Navbar -->
@@ -81,23 +140,20 @@
       >
         <ul class="navbar-nav">
           <li style="" class="nav-item nav-li">
-            <a style="padding: 15px 50px" class="nav-link nav-a" href="#hero">
+            <a style="padding: 15px" class="nav-link nav-a" href="#hero">
               <img style="width: 40px" src="./assets/asset 0.png" alt="" />
             </a>
           </li>
           <li id="ancor" class="nav-item nav-li">
             <a
-              style="padding: 15px 50px; color: #ff8689"
+              style="padding: 15px; color: #ff8689"
               class="nav-link nav-a"
               href="#about"
               >About</a
             >
           </li>
           <li id="ancor" class="nav-item nav-li">
-            <a
-              style="padding: 15px 50px; color: #ff8689"
-              class="nav-link nav-a"
-            >
+            <a style="padding: 15px; color: #ff8689" class="nav-link nav-a">
               <center>
                 <div style="text-align: center">
                   <div>
@@ -124,7 +180,7 @@
           <li style="background: black" class="nav-item nav-li">
             <a
               id="hwt"
-              style="padding: 15px 50px; color: #8cdbad"
+              style="padding: 15px; color: #8cdbad"
               class="nav-link nav-a hwtb"
               href="#howtobuy"
               >how to buy</a
@@ -133,7 +189,7 @@
           <li id="ancor" class="nav-item nav-li"></li>
           <li id="ancor" class="nav-item nav-li">
             <a
-              style="padding: 15px 50px; color: #88b4de"
+              style="padding: 15px; color: #88b4de"
               class="nav-link nav-a"
               href="#tokenomics"
               >tokenmics</a
@@ -141,12 +197,12 @@
           </li>
 
           <li class="nav-item nav-li">
-            <a style="padding: 15px 50px" class="nav-link nav-a" href="ttlink">
+            <a style="padding: 15px" class="nav-link nav-a" href="ttlink">
               <img style="width: 40px" src="./assets/asset 1.png" alt="" />
             </a>
           </li>
           <li class="nav-item nav-li">
-            <a style="padding: 15px 50px" class="nav-link nav-a" href="tglink">
+            <a style="padding: 15px" class="nav-link nav-a" href="tglink">
               <img
                 style="width: 40px"
                 src="./assets/asset 2.png"
@@ -186,7 +242,7 @@
             <div style="border: 16px solid #fe9100">
               <div class="inner-div">
                 <h2 class="abt-heading">ABOUT!</h2>
-                <p style="font-size: 45px" class="londrina-solid-regular">
+                <p style="font-size: 25px" class="londrina-solid-regular">
                   Meet Rainbow Bunny, a token inspired by the famous Viet OG
                   meme, Thỏ Bảy Màu!
                   <br />
@@ -218,12 +274,16 @@
 
     <!-- how to buy section -->
 
-    <section style="background: #000" id="howtobuy">
+    <section style="background: #000; padding-bottom: 95px" id="howtobuy">
       <center style="padding: 80px 0">
-        <img style="max-width: 90%" src="./assets/asset 10.png" alt="" />
+        <img
+          style="max-width: 500px; width: 100%"
+          src="./assets/asset 10.png"
+          alt=""
+        />
       </center>
       <section style="background: #f9e489" class="one">
-        <div class="container buy-div">
+        <div class="wrapper buy-div">
           <h1 class="buy-heading londrina-solid-regular">1</h1>
           <p class="londrina-solid-regular buy-p">
             Download a Solana wallet. We recommend Phantom or Solflare. These
@@ -234,7 +294,7 @@
       </section>
 
       <section style="background: #d898cb" class="skewed-div">
-        <div class="container buy-div">
+        <div class="wrapper buy-div">
           <h1 class="buy-heading londrina-solid-regular">2</h1>
           <p class="londrina-solid-regular buy-p">
             Purchase Solana through the Phantom wallet or alternatively send
@@ -244,7 +304,7 @@
         </div>
       </section>
       <section style="background: #88daab" class="skewed-two">
-        <div class="container buy-div">
+        <div class="wrapper buy-div">
           <h1 class="buy-heading londrina-solid-regular">3</h1>
           <p class="londrina-solid-regular buy-p">
             Get some $RBUNNY. Go to Raydium and paste the $RBUNNY contract
@@ -254,7 +314,7 @@
         </div>
       </section>
       <section style="background: #f7af89" class="skewed-third">
-        <div class="container buy-div">
+        <div class="wrapper buy-div">
           <h1 class="buy-heading londrina-solid-regular">4</h1>
           <p class="londrina-solid-regular buy-p">
             Congrats! You’re holding a colorful $RBUNNY bag. To view your tokens
@@ -288,8 +348,8 @@
       </center>
     </section>
 
-    <section class="token-details">
-      <div>
+    <section class="token-details" style="background-color: #19337e">
+      <div style="position: relative">
         <img class="token-back-img" src="./assets/asset 15.png" alt="" />
         <img class="left-img animated-img" src="./assets/asset 16.png" alt="" />
         <img
@@ -297,23 +357,90 @@
           src="./assets/asset 17.png"
           alt=""
         />
-        <div class="details">
-          <h1>TOTAL SUPPLY = 1 BILLION $RBUNNY</h1>
-          <h1>LP? BURNT!</h1>
-          <h1>BLOCKCHAIN = SOLANA</h1>
-          <h1>TAXES = ZERO. 0. NADA.</h1>
+
+        <div class="details" style="position: relative">
+          <h1 class="htb_text">TOTAL SUPPLY = 1 BILLION $RBUNNY</h1>
+          <h1 class="htb_text">LP? BURNT!</h1>
+          <h1 class="htb_text">BLOCKCHAIN = SOLANA</h1>
+          <h1 class="htb_text">TAXES = ZERO. 0. NADA.</h1>
         </div>
-        <img class="bottom-img" src="./assets/asset 18.png" alt="" />
+        <div class="bt_img">
+          <img src="./assets/asset 18.png" alt="" />
+        </div>
       </div>
-      <div class="footer"></div>
     </section>
 
     <section style="background: #19337e">
       <center>
-        <h1 class="footer-h">CA : xxxxxxxxxxxxxxxxx</h1>
+        <h5 class="footer-h">CA : xxxxxxxxxxxxxxxxx</h5>
       </center>
     </section>
+    <!-- modal section -->
+    <div id="myModal" class="modal">
+      <div class="mod_content" style="background-color: #131740">
+        <p style="color: #fff; font-size: 17px">
+          Are you ready to explore $RBUNNY?
+        </p>
+        <div
+          style="
+            text-align: center;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          <img
+            src="./assets/asset 6.png"
+            style="max-width: 300px; width: 80%; margin: 20px 0"
+            alt=""
+          />
+        </div>
+        <div
+          class="flex_dis"
+          style="display: flex; align-items: center; justify-content: center"
+        >
+          <button id="yesButton">Yes</button>
+          <button id="noButton">No</button>
+        </div>
+      </div>
+    </div>
+    <audio style="opacity: 1" id="closingAudio" src="/assets/bunny.mp3"></audio>
+    <script>
+      window.onload = function () {
+        var modal = document.getElementById("myModal");
+        modal.style.display = "block";
 
+        // Close the modal when clicking outside of it
+        window.onclick = function (event) {
+          var closeButton = document.getElementById("closeModal");
+          var closingAudio = document.getElementById("closingAudio");
+
+          const yesButton = document.getElementById("yesButton");
+          const noButton = document.getElementById("noButton");
+
+          if (yesButton) {
+            modal.style.display = "none";
+            closingAudio.play();
+          } else {
+            if (noButton) {
+              modal.style.display = "none";
+              closingAudio.play();
+            }
+          }
+
+          // yesButton.addEventListener("click", function () {
+          //   modal.style.display = "none";
+          //   closingAudio.play();
+          // });
+
+          // // Hide the modal when "No" is clicked
+          // noButton.addEventListener("click", function () {
+          //   modal.style.display = "none";
+          // });
+        };
+      };
+    </script>
     <script>
       function toggleAudio() {
         var audioElement = document.getElementById("player");
