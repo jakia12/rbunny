@@ -329,19 +329,6 @@
     transform: skewY(-1deg);
   }
 
-  .details {
-    max-width: 800px;
-
-    font-family: "Cradust";
-    text-align: center;
-
-    background: white;
-    padding: 90px 65px;
-    border: 6px solid black;
-    border-radius: 10%;
-
-    transform: translate(9%, -130%);
-  }
   .left-img {
     width: 100px;
     position: absolute;
@@ -381,5 +368,27 @@
     font-weight: 400;
     font-family: "Cradust";
     color: white;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .details {
+    width: 100%;
+    max-width: 562px;
+    margin: 0 auto;
+    font-family: "Cradust";
+    text-align: center;
+    background: white;
+    padding: 30px 65px;
+    border: 4px solid black;
+    border-radius: 30px;
+    transform: translate(0%, -105%);
+  }
+  .bt_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -110%;
+    position: relative;
   }
 }
