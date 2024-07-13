@@ -75,7 +75,13 @@ body {
   background: #fae686;
   text-align: center;
 }
-
+.left-img {
+  width: 170px;
+  position: absolute;
+  top: -40%;
+  left: 13%;
+  z-index: 9999999;
+}
 .abt-heading {
   font-weight: 800;
   font-family: Cradust;
@@ -221,18 +227,11 @@ body {
   border-radius: 30px;
 }
 
-.left-img {
-  width: 180px;
-  position: absolute;
-  top: -8%;
-  left: 25%;
-}
-
 .right-img {
   width: 200px;
   position: absolute;
-  top: -10%;
-  right: 28%;
+  top: -45%;
+  right: 13%;
 }
 
 .details h1 {
@@ -322,22 +321,6 @@ body {
     transform: skewY(-1deg);
   }
 
-  .left-img {
-    width: 100px;
-    position: absolute;
-    top: -50%;
-    left: 20%;
-    z-index: 9999999;
-  }
-
-  .right-img {
-    width: 120px;
-    position: absolute;
-    top: -52%;
-    right: 20%;
-    z-index: 9999999;
-  }
-
   .details h1 {
     font-size: 30px;
     line-height: 60px;
@@ -370,7 +353,7 @@ body {
   background-image: url("./assets/asset 15.png");
   background-size: cover;
   background-position: center center;
-  height: 120vh;
+  height: 110vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -398,6 +381,19 @@ body {
 }
 .tkn_txt {
   width: 50%;
+}
+
+.ca_sec {
+  padding: 400px 0 0;
+}
+
+@media screen and (max-width: 1920px) {
+  .ca_sec {
+    padding: 600px 0 0;
+  }
+  .ft_ca {
+    padding-top: 100px;
+  }
 }
 @media screen and (max-width: 768px) {
   .ban_img {
