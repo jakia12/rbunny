@@ -154,25 +154,31 @@
           </li>
           <li id="ancor" class="nav-item nav-li">
             <a style="padding: 15px; color: #ff8689" class="nav-link nav-a">
-               <div style="text-align: center; display: flex;justify-content: center;">
-                  <div>
-                    <img
-                      id="play"
-                      onclick="toggleAudio()"
-                      src="https://res.cloudinary.com/dchan630/image/upload/v1481676817/play_ierlvl.png"
-                      class="img-fluid"
-                      alt="Responsive image"
-                    /><audio id="player" src="./assets/bunny.mp3"></audio>
-                    <img
-                      id="pause"
-                      onclick="toggleAudio()"
-                      src="https://res.cloudinary.com/dchan630/image/upload/v1481676820/pause_nqfaht.png"
-                      class="img-fluid"
-                      alt="Responsive image"
-                    />
-                  </div>
-                  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+              <div
+                style="
+                  text-align: center;
+                  display: flex;
+                  justify-content: center;
+                "
+              >
+                <div>
+                  <img
+                    id="play"
+                    onclick="toggleAudio()"
+                    src="https://res.cloudinary.com/dchan630/image/upload/v1481676817/play_ierlvl.png"
+                    class="img-fluid"
+                    alt="Responsive image"
+                  /><audio id="player" src="./assets/bunny.mp3"></audio>
+                  <img
+                    id="pause"
+                    onclick="toggleAudio()"
+                    src="https://res.cloudinary.com/dchan630/image/upload/v1481676820/pause_nqfaht.png"
+                    class="img-fluid"
+                    alt="Responsive image"
+                  />
                 </div>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+              </div>
             </a>
           </li>
           <li style="background: black" class="nav-item nav-li">
@@ -228,10 +234,10 @@
       <img style="max-width: 90%" src="./assets/asset 5.png" alt="Hero Image" />
       <br />
       <img
-        style="margin-bottom: 50; width: 40%; max-width: 100%"
+        style="margin-bottom: 50"
         src="./assets/asset 6.png"
         alt="Animated Image"
-        class="pulse-animation"
+        class="pulse-animation ban_img"
       />
       <img id="black-border" src="./assets/asset 7.png" alt="" />
     </section>
@@ -333,16 +339,16 @@
       <center>
         <div>
           <img
-            class="horse-animation"
-            style="margin-top: 100px; width: 30%; max-width: 90%"
+            class="horse-animation tkn_img"
+            style="margin-top: 100px"
             src="./assets/asset 13.png"
             alt=""
           />
         </div>
         <div>
           <img
-            class="pulse-animation"
-            style="margin-top: 50px; width: 40%; max-width: 100%"
+            class="pulse-animation tkn_txt"
+            style="margin-top: 50px"
             src="./assets/asset 14.png"
             alt=""
           />
@@ -350,29 +356,33 @@
       </center>
     </section>
 
-    <section class="token-details" style="background-color: #19337e">
+    <section class="token-details bg_img">
       <div style="position: relative">
-        <img class="token-back-img" src="./assets/asset 15.png" alt="" />
-        <img class="left-img animated-img" src="./assets/asset 16.png" alt="" />
+        <!-- <img class="token-back-img" src="./assets/asset 15.png" alt="" /> -->
+        <!-- <img class="left-img animated-img" src="./assets/asset 16.png" alt="" />
         <img
           class="right-img animated-img"
           src="./assets/asset 17.png"
           alt=""
-        />
+        /> -->
 
-        <div class="details" style="position: relative">
+        <div class="details">
           <h1 class="htb_text">TOTAL SUPPLY = 1 BILLION $RBUNNY</h1>
           <h1 class="htb_text">LP? BURNT!</h1>
           <h1 class="htb_text">BLOCKCHAIN = SOLANA</h1>
           <h1 class="htb_text">TAXES = ZERO. 0. NADA.</h1>
         </div>
-        <div class="bt_img">
-          <img src="./assets/asset 18.png" alt="" />
-        </div>
       </div>
     </section>
 
-    <section style="background: #19337e">
+    <section style="background: #19337e; padding: 400px 0 0">
+      <div class="bt_img">
+        <img
+          src="./assets/asset 18.png"
+          style="width: 100%; max-width: 500px"
+          alt=""
+        />
+      </div>
       <center>
         <h5 class="footer-h">CA : xxxxxxxxxxxxxxxxx</h5>
       </center>
@@ -394,7 +404,7 @@
         >
           <img
             src="./assets/asset 6.png"
-            style="max-width: 300px; width: 80%; margin: 20px 0"
+            style="max-width: 300px; width: 100%; margin: 20px 0"
             alt=""
           />
         </div>
@@ -402,8 +412,8 @@
           class="flex_dis"
           style="display: flex; align-items: center; justify-content: center"
         >
-          <button id="yesButton"                       onclick="toggleAudio()">Yes</button>
-          <button id="noButton"                       onclick="toggleAudio()">No</button>
+          <button id="yesButton" onclick="toggleAudio()">Yes</button>
+          <button id="noButton" onclick="toggleAudio()">No</button>
         </div>
       </div>
     </div>
